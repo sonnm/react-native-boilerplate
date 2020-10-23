@@ -21,11 +21,17 @@ module.exports = {
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
+      modules: true,
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 11,
     sourceType: 'module',
   },
   plugins: ['react', 'react-native', 'prettier', 'no-autofix'],
+  settings: {
+    'import/resolver': {
+      'babel-module': {},
+    },
+  },
   rules: {
     'arrow-body-style': 'off',
     'no-autofix/arrow-body-style': 'error',
