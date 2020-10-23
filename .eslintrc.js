@@ -23,7 +23,7 @@ module.exports = {
       jsx: true,
       modules: true,
     },
-    ecmaVersion: 11,
+    ecmaVersion: 2018,
     sourceType: 'module',
   },
   plugins: ['react', 'react-native', 'prettier', 'no-autofix'],
